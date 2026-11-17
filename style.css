@@ -1,0 +1,30 @@
+:root {
+    /* Colors */
+    --cyan: hsl(171, 66%, 44%);
+    --blue: hsl(233, 100%, 69%);
+    --btn-border-cyan: hsl(171, 66%, 36%);
+    --btn-border-blue: hsl(233, 100%, 69%);
+    --btn-shadow-cyan: hsla(171, 66%, 36%, 0.5);
+    --btn-shadow-blue:  hsla(233, 100%, 69%, 0.5);
+    --footer-bg: hsl(220, 18%, 97%);
+
+    --neutral-dark_blue: hsl(210, 10%, 33%);
+    --neutral-dark_blue50: hsl(210, 10%, 50%);
+    --neutral-blue: hsl(201, 11%, 66%);
+
+    /* Typography */
+    --fs-h1: 45px;
+    --fs-h2: 35px;
+    --fs-h3: 23px;
+    --fs-p-lg: 20px;
+    --fs-p-md: 18px;
+    --fs-p-sm: 16px;
+    --fs-btn: 18px;
+
+    --font-family: "Bai Jamjuree", sans-serif;
+
+    /* spaceing */
+    --section-padding: 160px
+
+
+}
