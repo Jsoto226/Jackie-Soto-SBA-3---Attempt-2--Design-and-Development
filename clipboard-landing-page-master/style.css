@@ -86,7 +86,7 @@ header {
     margin-bottom: 55px;
 }
 
-:is(header, .about, .access .features) > p{
+:is(header, .about, .access .features .download) > p{
     max-width: 690px;
     margin: auto;
     text-align: center;
@@ -235,3 +235,202 @@ header > p {
 .clients img {
     place-self: center;
 }
+
+/* Download */
+.download {
+padding: 70px var(--section-padding) 150px;
+}
+
+.download > p {
+    margin-bottom: 50px ;
+}
+
+/* Footer */
+footer {
+    padding: 45px var(--section-padding);
+    background-color: var(--footer-bg);
+    display: grid;
+    grid-template-columns: minmax(15px, 1fr) 4fr minmax(170px, 1fr);
+}
+
+footer .footer-logo {
+   width: 55px; 
+}
+
+footer .links {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 120px));
+    grid-gap: 20px 70px;
+}
+
+footer .links a {
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--neutral-dark_blue50);
+}
+
+footer .links a:hover {
+    color: var(--cyan);
+}
+
+footer .links a:focus,
+.social-link a:focus {
+    outline: 3px dotted #0005;
+    outline-offset: 5px;
+}
+
+.social-link {
+    place-self: center flex-end;
+}
+
+.social-link a.card:not(:last-child) {
+    margin-right: 20px;
+}
+
+/* Media queries */
+@media screen and (max-width:1200px) {
+    :root {
+        /* spacing */
+        --section-padding: 80px;
+    }
+}
+.about {
+    padding: 75px var(--section-padding);
+}
+
+.about-inner {
+    flex-direction: colunm;
+}
+
+.about-inner .img-box {
+    width: 100%;
+}
+
+.about-inner .img-box img {
+    width: 80%;
+    margin:auto;
+    transform: translate(0);
+}
+
+.about-inner .card-group {
+    width: 100%;
+    padding: 70px 0 0;
+    text-align: center;
+}
+
+.about-inner .card-group .card p {
+    margin:auto;
+    }
+
+    /* access section */
+
+    .access img {
+        width: 80%;
+    }
+
+    /* for 992px */
+
+    @media screen and (max-width: 992px) {
+
+        /* footer section */
+        footer .links {
+            grid-template-columns:  repeat(2, minmax(120px 120px));
+            grid-gap: 20px 40px;
+        }
+        
+    }
+
+     /* for 768px */
+
+    @media screen and (max-width: 768px) {
+
+        /* header section */
+        .btngroup .btn-primary {
+            margin-right: 0;
+            margin-bottom: 25px;
+        }
+
+        /* footer section */
+        footer  {
+            grid-template-columns: 1fr;
+            place-items: center;
+            grid-gap: 50px 0;
+        }
+        
+    }
+
+    footer .links {
+        max-width: 100%;
+        grid-template-columns:  repeat(auto-fill, minmax(120px, 1fr));
+        grid-gap: 30px 40px;
+    }
+
+    .social-link {
+        place-self: center;
+    }
+
+    .social-link a:not(:last-child) {
+        margin-right: 35px;
+    }
+
+    /* 576px */
+    @media screen and (max-width: 576px) {
+        :root {
+            /* Typography */
+            --fs-h1: 32px;
+            --fs-h2: 28px;
+
+            --fs-p-lg: 16px;
+            --fs-p-md: 16px;
+
+            /* spacing */
+            --section-padding: 35px;
+        }
+
+        /* header section */
+        header {
+            background: url(./images/bg-header-mobile.png) no-repeat;
+            background-size: 100%;
+            padding: 130px 30px 75px;
+        }
+
+        .btn-group .btn {
+            width: 100%;
+        }
+
+        /* about section */
+        .about-inner .img-box img {
+            width: 100%;
+        }
+
+        .about-inner .card-group .card p {
+            line-height: 1.5;
+        }
+
+        /* access section */
+        .access p {
+            margin-bottom: 60px;
+        }
+
+        .access img {
+            width: 100%;
+        }
+
+        /* features section */
+        .features .card-group {
+            grid-template-columns: 1fr;
+            grid-gap: 60px 30px;
+        }
+
+        /* clients section */
+        .clients {
+            grid-gap: 60px 100px;
+        }
+
+        /* footer section */
+        footer .links {
+            grid-template-columns: 1fr;
+            place-items: center;
+        }
+    }
